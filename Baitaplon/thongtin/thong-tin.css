@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header begin */
+header {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #ab1d1d;
+    position: relative;
+}
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+#logo a {
+    position: absolute;
+    left: 100px;
+    width: 7%;
+    height: 100%;
+    font-size: 35px;
+    text-align: center;
+    line-height: 50px;
+    font-family: forte, Arial, sans-serif;
+}
+
+#header-nav {
+    float: right;
+    margin-right: 120px;
+}
+#header-nav > li {
+    display: inline-block;
+    line-height: 50px;
+}
+#header-nav li {
+    list-style: none;
+}
+#header-nav a {
+    padding: 17px;
+}
+#header-nav > li:hover > a {
+    background: rgba(183, 57, 57, 0.5);
+}
+
+ul.sub-nav-add,
+ul.sub-nav-account {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+}
+ul.sub-nav-add > li:hover > a,
+ul.sub-nav-account > li:hover > a {
+    background: rgba(204, 204, 204, 0.5);   
+}
+#header-nav li:hover ul.sub-nav-add,
+#header-nav li:hover ul.sub-nav-account {
+    display: block;
+}
+#header-nav li ul.sub-nav-add a {
+    color: #333;
+    display: block;
+    padding: 0 60px 0 20px;
+    line-height: 45px;
+}
+#header-nav li ul.sub-nav-account a {
+    color: #333;
+    display: block;
+    padding: 0 30px 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+#header-nav li ul.sub-nav-account li:nth-of-type(2) a {
+    border-bottom: none;
+    color: red;
+}
+.more-icon {
+    font-size: 9px;
+    margin-left: 5px;
+}
+.ti-bar-chart-alt, .ti-user{
+    margin-right: 5px;
+}
+.plus-icon2, .acc-icon {
+    margin-right: 12px;
+}
+/* header end */
+
+/* nav */
+nav {
+    display:block;
+    background: #f0f3f6;
+    height: 60px;
+}
+nav ul {
+    display: inline-block;
+    margin-left: 150px;
+}
+nav li {
+    display: inline-block;
+    font-weight: bold;
+}
+nav li:first-of-type {
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    line-height: 60px;
+    color: #333;
+    font-size: 16px;
+    padding: 16px 20px;
+}
+nav li:hover a {
+    color: #ab1d1d;
+}
+
+/* table */
+.content {
+    height: 563px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 130px 10px;
+    overflow: auto;
+    margin-top: 20px;
+}
+table.thongtin {
+    border-spacing: 240px 20px;
+}
+table.doimatkhau {
+    margin-left: 250px;
+    border-spacing: 100px 10px;
+}
+table td {
+    font-size: 14px;
+    padding-top: 20px;
+}
+table input,select {
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+table.doimatkhau input,
+table.doimatkhau select {
+    width: 400px;
+}
+table span {
+    color: red;
+    font-size: 13px;
+}
+
+/* submit */
+div.submit {
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+}
+div.submit .save {
+    display:inline-block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #28a745;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+/* footer */
+/* footer {
+    display: block;
+    margin-top: 20px;
+    bottom: 0;
+    clear: both;
+    position: relative  ;
+    height: 40px;
+    background-color: #55573b;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+footer h3{
+    font-size: 13px;
+} */
+
+footer{
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+}
+
+footer div{
+    clear: both;
+    height: 40px;
+    background-color: #55573b;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}

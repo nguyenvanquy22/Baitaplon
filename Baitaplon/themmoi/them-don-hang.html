@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="them-don-hang.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/picwish.png" type="image/icon type">
+    <title>Thêm đơn hàng</title>
+    <style>
+        ul {
+            padding-left: 0;
+        }
+        header li:hover a, header #logo a {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="/tongquan/tong-quan.html">GRP9</a>
+        </div>
+        <ul id="header-nav">
+            <li>
+                <a href="#">
+                    <i class="plus-icon1 ti-plus"></i>
+                    Thêm mới
+                    <i class="more-icon ti-angle-down"></i>
+                </a>
+                <ul class="sub-nav-add">
+                    <li>
+                        <a href="/themmoi/them-san-pham.html">
+                            <i class="plus-icon2 ti-plus"></i>
+                            Sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/themmoi/them-don-hang.html">
+                            <i class="plus-icon2 ti-plus"></i>
+                            Đơn hàng
+                        </a>
+                    </li>
+                </ul> 
+            </li>
+            <li><a href="#"><i class="ti-bell"></i></a></li>
+            <li>
+                <a href="#">
+                    nhom9@gmail.com
+                    <i class="more-icon ti-angle-down"></i>
+                </a>
+                <ul class="sub-nav-account">
+                    <li>
+                        <a href="/thongtin/thong-tin.html">
+                            <i class="acc-icon ti-user"></i>
+                            Tài khoản (Giám đốc)
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="/login/login.html">
+                            <i class="acc-icon ti-power-off"></i>
+                            Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </li> 
+        </ul>
+        </div>
+    </header>
+    <nav>
+        <ul id="nav">
+            <li><a href="/tongquan/tong-quan.html">Tổng quan</a></li>
+            <li>
+                <a href="#">Sản phẩm<i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav sanpham">
+                    <li><a href="/sanpham/san-pham.html"><i class="ti-dropbox"></i>Sản phẩm</i></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Đơn hàng<i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav donhang">
+                    <li><a href="/donhang/html/bo-loc.html"><i class="shopping-cart1 ti-shopping-cart"></i>Đơn hàng</a></li>
+                    <!-- <li><a href=""><i class="ti-search"></i>Đơn trùng</a></li>
+                    <li><a href=""><i class="ti-truck"></i>Chờ gửi vận chuyển</a></li> -->
+                    <li><a href="/donhang/html/khieu-nai.html"><i class="ti-alert"></i>Khiếu nại</a></li>
+                    <li><a href="/donhang/html/thanh-toan-cod-1.html"><i class="ti-check"></i>Đối soát</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Báo cáo<i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav baocao">
+                    <li><a href="#">
+                            <i class="ti-money"></i>
+                            Doanh thu
+                            <i class="ti-angle-right"></i>
+                        </a>
+                        <ul class="sub-sub-nav doanhthu">
+                            <li><a href="/baocao/dt-tongquan.html"><i class="ti-bar-chart-alt"></i>Tổng quan</a></li>
+                            <li><a href="/baocao/dt-theotg.html"><i class="ti-calendar"></i>Theo thời gian</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="shopping-cart1 ti-shopping-cart"></i>
+                            Đơn hàng
+                            <i class="ti-angle-right"></i>
+                        </a>
+                        <ul class="sub-sub-nav donhang">
+                            <li><a href="/baocao/dh-dontao.html"><i class="ti-calendar"></i>Đơn tạo</a></li>
+                            <li><a href="/baocao/dh-dontc.html"><i class="ti-check"></i>Đơn thành công</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li>
+                <a href="">Website<i class="more-icon ti-angle-down"></i></a>
+            </li>
+            <li>
+                <a href="">Cài đặt<i class="more-icon ti-angle-down"></i></a>
+            </li> -->
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <ul class="page-header">
+            <li><a href=""><i class="ti-home"></i></a><span>/</span></li>
+            <li><a href="#">Đơn hàng</a></a><span>/</span></li>
+            <li><a href="#">Thêm đơn hàng</a><span>/</span></li>
+            <li><a href="#">Thông tin đơn hàng</a>
+        </ul>
+        <div class="content-left">
+            <div class="table-data khachhang">
+                <div class="table-header">
+                    <div class="title">
+                        <i class="ti-user"></i><span>Khách hàng</span>
+                    </div>
+                    <div class="title-side">
+                        <div class="input-group flex-nowrap">
+                            <input type="text" class="form-control" placeholder="Nguồn đơn hàng" aria-describedby="addon-wrapping">
+                            <span class="input-group-text" id="addon-wrapping"><i class="ti-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-mobile"></i></span>
+                        <input type="text" class="form-control" placeholder="Điện thoại" aria-describedby="addon-wrapping">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-save"></i></span>
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-location-pin"></i></span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Thành phố -</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Tên khách" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-location-pin"></i></span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Quận huyện -</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="ti-home"></i></span>
+                        <textarea class="form-control" rows="1" placeholder="Địa chỉ" aria-label="With textarea"></textarea>
+                      </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-location-pin"></i></span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Phường xã -</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="ti-comments"></i></span>
+                        <textarea class="form-control" rows="2" placeholder="Ghi chú khách hàng (Để in)" aria-label="With textarea"></textarea>
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="ti-comment-alt"></i></span>
+                        <textarea class="form-control" rows="2" placeholder="Ghi chú chăm sóc khách hàng (Nội bộ)" aria-label="With textarea"></textarea>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-credit-card"></i></span>
+                        <input type="text" class="form-control" placeholder="Mã thẻ khách hàng" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-user"></i></span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Giới tính -</option>
+                            <option value="1">Nam</option>
+                            <option value="2">Nữ</option>
+                            <option value="3">Khác</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-email"></i></span>
+                        <input type="text" class="form-control" placeholder="Email khách hàng" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-shield"></i></span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>- Nhóm -</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-calendar"></i></span>
+                        <input type="text" class="form-control" placeholder="Ngày sinh khách hàng" aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-facebook"></i></span>
+                        <input type="text" class="form-control" placeholder="Facebook khách hàng" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+            <div class="table-data sanpham">
+                <div class="table-header">
+                    <div class="title">
+                        <i class="ti-package"></i><span>Sản phẩm</span>
+                    </div>
+                    <div class="title-side">
+                        <div class="input-group flex-nowrap">
+                            <button type="button" class="btn btn-light"><i class="ti-eye"></i> Xem tồn</button>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Bán lẻ</option>
+                                <option value="1">-Giá bán-</option>
+                                <option value="2">Bán lẻ</option>
+                                <option value="3">Bán sỉ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-describedby="addon-wrapping">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-plus"></i></span>
+                    </div>
+                </div>
+                <div class="filter">
+                    <div class="row">
+                        <div class="col-sm-3">Sản phẩm</div>
+                        <div class="col-sm-3">SL</div>
+                        <div class="col-sm-3">Giá</div>
+                        <div class="col-sm-3">Tổng</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">Tổng</div>
+                        <div class="col-sm-3">0</div>
+                        <div class="col-sm-3">0</div>
+                        <div class="col-sm-3">0</div>
+                    </div>
+                </div>  
+            </div>
+            <div class="table-data vanchuyen">
+                <div class="table-header">
+                    <div class="title">
+                        <i class="ti-truck"></i><span>Vận chuyển</span>
+                    </div>
+                    <div class="title-side">
+                        <div class="row">
+                            <div class="input-group flex-nowrap">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Cho xem, không thử hàng</option>
+                                    <option value="1">- Cho khách xem hàng -</option>
+                                    <option value="2">Cho xem và thử hàng</option>
+                                    <option value="3">Cho xem, không lấy thu ship</option>
+                                    <option value="4">Không cho thử hàng</option>
+                                </select>
+                            </div>
+                            <div class="input-group flex-nowrap">
+                                <input type="text" class="form-control" placeholder="Ngày giao hàng" aria-describedby="addon-wrapping">
+                                <span class="input-group-text" id="addon-wrapping"><i class="ti-alarm-clock"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"><input type="text" class="form-control" placeholder="Phí ship báo khách" aria-describedby="addon-wrapping"></div>
+                    <div class="col-sm-4"><input type="text" class="form-control" placeholder="Phí trả HVC" aria-describedby="addon-wrapping"></div>
+                    <div class="col-sm-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                            Lấy theo phí HVC
+                            </label>
+                      </div></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-group flex-nowrap ma-km">
+                            <span class="input-group-text" id="addon-wrapping"><i class="ti-alarm-clock"></i></span>
+                            <input type="text" class="form-control" placeholder="Mã khuyến mại HVC" aria-describedby="addon-wrapping">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Mua bảo hiểm <i class="ti-help-alt"></i></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Giao hàng một phần <i class="ti-help-alt"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="table-data thanhtoan">
+                <div class="table-header">
+                    <div class="title">
+                        <i class="ti-credit-card"></i><span>Thanh toán</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">%</span>
+                        <input type="text" class="form-control" placeholder="Giá trị VAT" aria-describedby="addon-wrapping">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control" placeholder="Số hóa đơn VAT" aria-describedby="addon-wrapping">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-calendar"></i></span>
+                        <input type="text" class="form-control" placeholder="Ngày xuất hóa đơn VAT" aria-describedby="addon-wrapping">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-tag"></i></span>
+                        <input type="text" class="form-control" placeholder="Mã coupon" aria-describedby="addon-wrapping">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-reload"></i></span>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-target"></i></span>
+                        <input type="text" class="form-control" placeholder="Tiêu điểm" aria-describedby="addon-wrapping">
+                        <span class="input-group-text" id="addon-wrapping">0</span>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-credit-card"></i></span>
+                        <input type="text" class="form-control" placeholder="Tiền đặt cọc" aria-describedby="addon-wrapping">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-money"></i></span>
+                        <input type="text" class="form-control" placeholder="Tiền chuyển khoản" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+            <div class="table-data thongtin">
+                <div class="table-header">
+                    <div class="title">
+                        <i class="ti-info-alt"></i><span>Thông tin</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Chuyển hàng - Giao hàng tận nhà</option>
+                            <option value="1">- Loại đơn -</option>
+                            <option value="2">Chuyển hàng - Giao hàng tận nhà</option>
+                            <option value="3">Chuyển hàng - Đổi sản phẩm</option>
+                            <option value="4">Chuyển hàng - khách đổi lại hàng</option>
+                            <option value="5">Mua tại quầy</option>
+                            <option value="6">Đặt trước</option>
+                            <option value="7">Đổi quà</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-id-badge"></i></span>
+                        <input type="text" class="form-control" placeholder="Nhân viên bán hàng" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Chờ xác nhận</option>
+                            <option value="1">- Đổi trạng thái -</option>
+                            <option value="2">Mới</option>
+                            <option value="3">Chờ xác nhận</option>
+                            <option value="4">Đang xác nhận</option>
+                            <option value="5">Đã xác nhận</option>
+                            <option value="6">Hết hàng</option>
+                            <option value="7">Hệ thống hủy</option>
+                            <option value="8">Thất bại</option>
+                        </select>
+                        <span class="input-group-text" id="addon-wrapping"><i class="ti-help-alt"></i></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group flex-nowrap">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Tiếp tục thêm đơn hàng</option>
+                            <option value="1">- Sau khi lưu dữ liệu -</option>
+                            <option value="2">Tiếp tục thêm đơn hàng</option>
+                            <option value="3">Về danh sách đơn hàng</option>
+                            <option value="4">Xem chi têu đơn hàng</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-footer">
+                    <div class="row">
+                        <div class="col-sm-6">Thu khách: 0</div>
+                        <div class="col-sm-6">Thu Shop: 0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-btn">
+                <button type="button" class="btn btn-success"><i class="ti-save"></i>(F9) Lưu</button>
+                <button type="button" class="btn btn-primary"><i class="ti-printer"></i>(F10) Lưu và in</button>
+            </div>
+        </div>    
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <footer>
+        <div>
+            Hotline: 1900 5986
+        </div>
+    </footer>
+</body>
+</html>

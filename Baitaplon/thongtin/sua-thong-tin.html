@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="thong-tin.css">
+    <link rel="stylesheet" href="/font/themify-icons-font/themify-icons/themify-icons.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/picwish.png" type="image/icon type">
+    <title>Sửa thông tin</title>
+    <style>
+        nav li:nth-of-type(4) a {
+            color: #ab1d1d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="/tongquan/tong-quan.html">GRP9</a>
+        </div>
+        <ul id="header-nav">
+            <li>
+                <a href="/tongquan/tong-quan.html">
+                    <i class="ti-bar-chart-alt"></i>
+                    Trang quản trị
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="ti-user"></i>
+                    nhom9@gmail.com
+                    <i class="more-icon ti-angle-down"></i>
+                </a>
+                <ul class="sub-nav-account">
+                    <li>
+                        <a href="/thongtin/thong-tin.html">
+                            <i class="acc-icon ti-user"></i>
+                            Thông tin tài khoản
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="">
+                            <i class="acc-icon ti-settings"></i>
+                            Cài đặt giao diện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="acc-icon ti-bell"></i>
+                            Cài đặt thông báo
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="/login/login.html">
+                            <i class="acc-icon ti-power-off"></i>
+                            Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </li> 
+        </ul>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Tài khoản</li>
+            <li>|</li>
+            <li><a href="thong-tin.html">Thông tin</a></li>
+            <li><a href="#">Sửa thông tin</a></li>
+            <li><a href="doi-mat-khau.html">Đổi mật khẩu</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <table class="suathongtin">
+            <tr>
+                <td>Tên đầy đủ: <span>*</span></td>
+                <td><input type="text"></td>
+                <td>Điện thoại: <span>*</span></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh: <span>*</span></td>
+                <td><input type="date" name="bday"></td>
+                <td>Email nhận thanh toán:</td>
+                <td><input type="text"></td>            
+            </tr>
+            <tr>
+                <td>Giới tính: <span>*</span></td>
+                <td><select name="status">
+                    <option value="1">- Giới tính -</option>
+                    <option value="2">Nam</option>
+                    <option value="3">Nữ</option>
+                </td>
+                <td>Tài khoản ngân hàng: <span>*</span></td>
+                <td>  
+                    <select name="bankId"><option value="">- Ngân hàng -</option>
+                        <option value="1">Techcombank</option>
+                        <option value="2">Vietcombank</option>
+                        <option value="3">Agribank</option>
+                        <option value="4">BIDV</option>
+                        <option value="5">Tienphongbank</option>
+                        <option value="6">MSB - Ngân hàng Hàng Hải</option>
+                        <option value="7">Oceanbank</option>
+                        <option value="8">Sacombank</option>
+                        <option value="9">Vietinbank</option>
+                        <option value="10">Bảo Kim</option>
+                        <option value="11">ACB</option>
+                        <option value="12">VIB</option>
+                        <option value="13">MB Bank</option>
+                        <option value="14">Đông Á </option>
+                        <option value="15">ANZ</option>
+                        <option value="16">VP Bank</option>
+                        <option value="17">Lotte Mart</option>
+                        <option value="18">Eximbank</option>
+                        <option value="19">HDbank</option>
+                        <option value="20">NCB</option>
+                        <option value="21">Ngân hàng TMCP An Bình</option>
+                        <option value="22">Bưu điện Liên Việt</option>
+                        <option value="23">Ngân Hàng TMCP Phương Đông Việt Nam (OCB)</option>
+                        <option value="24">Phương Nam (Southernbank)</option>
+                        <option value="25">NGÂN HÀNG TMCP SÀI GÒN (SCB)</option>
+                        <option value="26">Ngân hàng Bắc Á</option>
+                        <option value="27">Citibank Vietnam</option>
+                        <option value="28">Ngân hàng SHB</option>
+                        <option value="29">Seabank</option>
+                        <option value="30">VietA Bank</option>
+                        <option value="31">Shinhan Bank</option>
+                        <option value="32">Viet Capital Bank</option>
+                        <option value="33">VIETBANK - NGÂN HÀNG VIỆT NAM THƯƠNG TÍN</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td>Thành phố: <span>*</span></td>
+                <td>  
+                    <select name="cityLocationId"><option value="">- Thành phố -</option>
+                        <option value="254">Hà Nội</option>
+                        <option value="255">Hồ Chí Minh</option>
+                        <option value="312">Đà Nẵng</option>
+                        <option value="280">Hải Phòng</option>
+                        <option value="270">Quảng Ninh</option>
+                        <option value="267">Khánh Hòa</option>
+                        <option value="256">An Giang</option>
+                        <option value="257">Bà Rịa - Vũng Tàu</option>
+                        <option value="258">Bắc Ninh</option>
+                        <option value="259">Bắc Giang</option>
+                        <option value="260">Bình Dương</option>
+                        <option value="261">Bình Định</option>
+                        <option value="262">Bình Phước</option>
+                        <option value="263">Bình Thuận</option>
+                        <option value="264">Bến Tre</option>
+                        <option value="265">Bắc Cạn</option>
+                        <option value="266">Cần Thơ</option>
+                        <option value="268">Thừa Thiên Huế</option>
+                        <option value="269">Lào Cai</option>
+                        <option value="271">Đồng Nai</option>
+                        <option value="272">Nam Định</option>
+                        <option value="273">Cà Mau</option>
+                        <option value="274">Cao Bằng</option>
+                        <option value="275">Gia Lai</option>
+                        <option value="276">Hà Giang</option>
+                        <option value="277">Hà Nam</option>
+                        <option value="278">Hà Tĩnh</option>
+                        <option value="279">Hải Dương</option>
+                        <option value="281">Hòa Bình</option>
+                        <option value="282">Hưng Yên</option>
+                        <option value="283">Kiên Giang</option>
+                        <option value="284">Kon Tum</option>
+                        <option value="285">Lai Châu</option>
+                        <option value="286">Lâm Đồng</option>
+                        <option value="287">Lạng Sơn</option>
+                        <option value="288">Long An</option>
+                        <option value="289">Nghệ An</option>
+                        <option value="290">Ninh Bình</option>
+                        <option value="291">Ninh Thuận</option>
+                        <option value="292">Phú Thọ</option>
+                        <option value="293">Phú Yên</option>
+                        <option value="294">Quảng Bình</option>
+                        <option value="295">Quảng Nam</option>
+                        <option value="296">Quảng Ngãi</option>
+                        <option value="297">Quảng Trị</option>
+                        <option value="298">Sóc Trăng</option>
+                        <option value="299">Sơn La</option>
+                        <option value="300">Tây Ninh</option>
+                        <option value="301">Thái Bình</option>
+                        <option value="302">Thái Nguyên</option>
+                        <option value="303">Thanh Hóa</option>
+                        <option value="304">Tiền Giang</option>
+                        <option value="305">Trà Vinh</option>
+                        <option value="306">Tuyên Quang</option>
+                        <option value="307">Vĩnh Long</option>
+                        <option value="308">Vĩnh Phúc</option>
+                        <option value="309">Yên Bái</option>
+                        <option value="310">Đắc Lắc</option>
+                        <option value="311">Đồng Tháp</option>
+                        <option value="313">Đắc Nông</option>
+                        <option value="314">Hậu Giang</option>
+                        <option value="315">Bạc Liêu</option>
+                        <option value="316">Điện Biên</option>
+                        <option value="-1">Chưa gắn thành phố</option></select>
+                </td>
+                <td>Chi nhánh:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Quận huyện: <span>*</span></td>
+                <td><select>
+                    <option value="1">- Quận huyện -</option>
+                </select></td>
+                <td>Số tài khoản:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phường xã: <span>*</span></td>
+                <td><select>
+                    <option value="1">- Phường xã -</option>
+                </select></td>
+                <td>Chủ tài khoản:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <div class="submit"><a class="save" href="">Lưu</a></div>
+    </div>
+
+    <footer>
+        <div>
+            Hotline: 1900 5986
+        </div>
+    </footer>
+</body>
+</html>

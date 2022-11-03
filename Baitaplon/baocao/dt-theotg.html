@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dt-theotg.css">
+    <link rel="stylesheet" href="/font/themify-icons-font/themify-icons/themify-icons.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/picwish.png" type="image/icon type">
+    <title>Báo cáo doanh thu theo thời gian </title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="/tongquan/tong-quan.html">GRP9</a>
+        </div>
+        <ul id="header-nav">
+            <li>
+                <a href="#">
+                    <i class="plus-icon1 ti-plus"></i>
+                    Thêm mới
+                    <i class="more-icon ti-angle-down"></i>
+                </a>
+                <ul class="sub-nav-add">
+                    <li>
+                        <a href="/themmoi/them-san-pham.html">
+                            <i class="plus-icon2 ti-plus"></i>
+                            Sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/themmoi/them-don-hang.html">
+                            <i class="plus-icon2 ti-plus"></i>
+                            Đơn hàng
+                        </a>
+                    </li>
+                </ul> 
+            </li>
+            <li><a href="#"><i class="ti-bell"></i></a></li>
+            <li>
+                <a href="#">
+                    nhom9@gmail.com
+                    <i class="more-icon ti-angle-down"></i>
+                </a>
+                <ul class="sub-nav-account">
+                    <li>
+                        <a href="/thongtin/thong-tin.html">
+                            <i class="acc-icon ti-user"></i>
+                            Tài khoản (Giám đốc)
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/login/login.html">
+                            <i class="acc-icon ti-power-off"></i>
+                            Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </li> 
+        </ul>
+        </div>
+    </header>
+    <nav>
+        <ul id="nav">
+            <li><a href="/tongquan/tong-quan.html">Tổng quan</a></li>
+            <li>
+                <a href="#">Sản phẩm<i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav sanpham">
+                    <li><a href="/sanpham/san-pham.html"><i class="ti-dropbox"></i>Sản phẩm</i></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Đơn hàng<i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav donhang">
+                    <li><a href="/donhang/html/bo-loc.html"><i class="shopping-cart1 ti-shopping-cart"></i>Đơn hàng</a></li>
+                    <!-- <li><a href=""><i class="ti-search"></i>Đơn trùng</a></li>
+                    <li><a href=""><i class="ti-truck"></i>Chờ gửi vận chuyển</a></li> -->
+                    <li><a href="/donhang/html/khieu-nai.html"><i class="ti-alert"></i>Khiếu nại</a></li>
+                    <li><a href="/donhang/html/thanh-toan-cod-1.html"><i class="ti-check"></i>Đối soát</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Báo cáo<i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav baocao">
+                    <li><a href="#">
+                            <i class="ti-money"></i>
+                            Doanh thu
+                            <i class="ti-angle-right"></i>
+                        </a>
+                        <ul class="sub-sub-nav doanhthu">
+                            <li><a href="/baocao/dt-tongquan.html"><i class="ti-bar-chart-alt"></i>Tổng quan</a></li>
+                            <li><a href="/baocao/dt-theotg.html"><i class="ti-calendar"></i>Theo thời gian</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="shopping-cart1 ti-shopping-cart"></i>
+                            Đơn hàng
+                            <i class="ti-angle-right"></i>
+                        </a>
+                        <ul class="sub-sub-nav donhang">
+                            <li><a href="/baocao/dh-dontao.html"><i class="ti-calendar"></i>Đơn tạo</a></li>
+                            <li><a href="/baocao/dh-dontc.html"><i class="ti-check"></i>Đơn thành công</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <!-- <li>
+                <a href="">Website<i class="more-icon ti-angle-down"></i></a>
+            </li>
+            <li>
+                <a href="">Cài đặt<i class="more-icon ti-angle-down"></i></a>
+            </li> -->
+        </ul>
+    </nav>
+    
+    <main>
+        <div id="container">
+            <!-- <div > -->
+                <ul class="page-header">
+                    <li><a href="#"><i class="ti-home"></i></a><span>/</span></li>
+                    <li><a href="#">Báo cáo</a><span>/</span></li>
+                    <li><a href="#">Đơn hàng</a><span>/</span></li>
+                    <li><a href="#">Thành công theo thời gian</a></li>
+                </ul>
+            <!-- </div> -->
+
+            <div class="search-options">
+                <div class="show-info">
+                    <ul>
+                        <li style="padding: 0;">
+                            <select style="padding: 10px;" name="time" id="cbotime">
+                                <option value="1">Theo ngày <i class="ti-arrow-down"></i></option>
+                                <option value="2">Theo tháng <i class="ti-arrow-down"></i></option>
+                            </select>
+                        </li>
+                        <li style="padding: 0px;">
+                            <ul class="form-time">
+                                <li class="edit-form-time">
+                                    <input style="padding: 10px;" value="12/10/2022" type="date" maxlength="255" autocomplete="off" placeholder="Từ">
+                                </li>
+                                <li class="edit-form-time">
+                                    <input style="padding: 10px;" value="12/10/2022" type="date" maxlength="255" autocomplete="off" placeholder="Đến">
+                                </li>
+                                <li>
+                                    <div>
+                                        <i title="Khoảng ngày" class="content-icon ti-calendar"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="edit-li-3-4-5">Nhóm 9</li>
+                        <li class="edit-li-3-4-5 edit-li-4-5">Thương hiệu</li>
+                        <li class="edit-li-3-4-5 edit-li-4-5">Danh mục</li>
+                        <li>Lọc</li>
+                    </ul>
+                </div>
+
+                <div class="search-button">
+                    <div class="button">
+                        Thao tác
+                        <i class="ti-angle-down" ></i>
+                        <div class="subnav">
+                            
+                        </div>
+                    </div>
+                    <ul class="subnav-button">
+                        <li>
+                            <i class="ti-file"></i>
+                            Xuất Excel
+                        </li>
+
+                        <li>
+                            <i class="ti-printer"></i>
+                            In báo cáo 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tabble-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Thời gian</td>
+                            <td>Đơn đặt</td>
+                            <td>Đơn thành công</td>
+                            <td>Bán lẻ</td>
+                            <td>Bán sỉ</td>
+                            <td>VAT</td>
+                            <td>BHMR</td>
+                            <td>Phí trả hàng</td>
+                            <td>Doanh số</td>
+                            <td>Chiết khấu</td>
+                            <td>Tiêu điểm</td>
+                            <td>Doanh thu</td>
+                            <td>Doanh thu dự kiến</td>
+                            <td>Giá vốn</td>
+                            <td>Lợi nhuận</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>[1]</td>
+                            <td>[2]</td>
+                            <td>[3]</td>
+                            <td>[4]</td>
+                            <td>[5]</td>
+                            <td>[6]</td>
+                            <td>[7]</td>
+                            <td>[8]</td>
+                            <td>[9]</td>
+                            <td>[10=4+5+6+8+9]</td>
+                            <td>[11]</td>
+                            <td>[12]</td>
+                            <td>[13=10-11-12]</td>
+                            <td>[14=3+5+6+8+9-11-12]</td>
+                            <td>[15]</td>
+                            <td>[16]</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="note">
+                <div class="icon-note">
+                    <i class="ti-light-bulb"></i>
+                </div>
+
+                <div class="content-note">
+                    <dl>
+                        <dd>- Các cột chuyển hàng, bán sỉ, bán lẻ là các dữ liệu bán đã trừ các đơn trả hàng, chưa trừ chiết khấu.</dd>
+                        <dd>- Lợi nhuận = Doanh thu đã trừ chiết khấu - Tổng giá trị các sản phẩm XNK tính theo giá vốn + Phí trả hàng - Điểm đã sử dụng.</dd>
+                        <dd>- Cột doanh thu dự kiến = Doanh thu đơn đặt - Chiết khấu(chiết khấu bán sỉ + bán lẻ + chiết khấu đơn đặt) - tiền tích lũy.</dd>
+                        <dd>- Cột đơn đặt = tổng đơn hàng ở các trạng thái: <span style="font-weight: bold;">Mới, Chờ xác nhận, Đang xác nhận, Đã xác nhận, Đổi kho hàng, Đang đóng gói, Đã đóng gói, Chờ thu gom, Đang chuyển, Thành công.</span></dd>
+                        <dd>- Cột đơn đặt đã trừ chi phí đơn trả lại (Loại chuyển hàng = [T] Khách trả lại hàng)</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            Hotline: 1900 5986
+        </div>
+    </footer>
+</body>
+</html>
