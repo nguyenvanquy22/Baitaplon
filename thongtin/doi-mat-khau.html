@@ -77,19 +77,40 @@
         <table class="doimatkhau">
             <tr>
                 <td>Mật khẩu cũ: <span>*</span></td>
-                <td><input type="password"></td>
+                <td><input type="password" id="mk-cu"></td>
             </tr>
             <tr>
                 <td>Mật khẩu mới: <span>*</span></td>
-                <td><input type="password"></td>
+                <td><input type="password" id="mk-moi"></td>
             </tr>
             <tr>
                 <td>Nhập lại mật khẩu mới: <span>*</span></td>
-                <td><input type="password"></td>
+                <td><input type="password" id="cf-mk-moi"></td>
             </tr>
         </table>
-        <div class="submit"><a class="save" href="">Đổi mật khẩu</a></div>
+        <div class="submit" onclick="doimk()"><p class="save">Đổi mật khẩu</p></div>
     </div>
+
+    <script>
+        const data = {
+            username: 'nhom9@gmail.com', 
+            password: '123456789',
+        }
+        function doimk(){
+            const oldPass = document.getElementById('mk-cu').value;
+            const newPass = document.getElementById('mk-moi').value;
+            const cfNewPass = document.getElementById('cf-mk-moi').value;
+            if(data.password != oldPass) alert('Mật khẩu sai.');
+            else{
+                if(newPass.length < 8)  alert('Mật khẩu phải trên 8 ký tự. Hãy thử lại.');                
+                else if(newPass != cfNewPass)  alert('Các mật khẩu đã nhập không khớp. Hãy thử lại.');
+                else {
+                    data.password = newPass;
+                    alert("Đổi mật khẩu thành công.");
+                }
+            }
+        }
+    </script>
 
    <footer>
         <div>

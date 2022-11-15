@@ -115,7 +115,7 @@
         </ul>
     </nav>
 
-    <div id="content">
+    <div class="content">
         <ul class="page-header">
             <li><a href=""><i class="ti-home"></i></a><span>/</span></li>
             <li><a href="#">Sản phẩm </a><span>/</span></li>
@@ -127,11 +127,11 @@
                 <table>
                     <tr>
                         <td><label for="txtt">Tên <span class="text-danger">*</span></label></td>
-                        <td class="fline" colspan="3"><input type="text" name="t" id="txtt"></td>
+                        <td class="fline" colspan="3"><input type="text" name="t" class="txtt"></td>
                     </tr>
                     <tr>
                         <td> <label for="loai1">Loại <span class="text-danger">*</span></label></td>
-                        <td> <select name="loai" id="loai1">
+                        <td> <select name="loai" class="loai1">
                             <option value="1" checked>Sản phẩm</option>
                             <option value="2">Sản phẩm nhiều đơn vị tính</option>
                             <option value="3">Voucher</option>
@@ -144,31 +144,31 @@
                             <option value="10">Combo</option>
                         </td>
                         <td><label for="loai">SP cha</label></td>
-                        <td><input type="text" name="spcha" id="loai" placeholder=" Tìm sản phẩm cha"></td>
+                        <td><input type="text" name="spcha" class="loai" placeholder=" Tìm sản phẩm cha"></td>
                     </tr>
                     <tr>
                         <td><label for="loai">Mã</label></td>
-                        <td><input type="text" name="ma" id="loai"></td>
+                        <td><input type="text" name="ma" class="loai"></td>
                         <td><label for="loai">Mã vạch</label></td>
-                        <td><input type="text" name="mavach" id="loai"></td>
+                        <td><input type="text" name="mavach" class="loai"></td>
                     </tr>
                     <tr>
                         <td><label for="loai">Giá nhập</label></td>
-                        <td><input type="number" name="gianhap" id="loai"></td>
+                        <td><input type="number" name="gianhap" class="loai"></td>
                         <td><label for="loai">VAT</label></td>
-                        <td><input type="number" name="vat" id="loai" placeholder=" %"></td>
+                        <td><input type="number" name="vat" class="loai" placeholder=" %"></td>
                     </tr>
                     <tr>
                         <td><label for="loai">Giá bán</label></td>
-                        <td><input type="number" name="giaban" id="loai"></td>
+                        <td><input type="number" name="giaban" class="loai"></td>
                         <td><label for="loai">Giá sỉ</label></td>
-                        <td><input type="number" name="vat" id="loai"></td> 
+                        <td><input type="number" name="vat" class="loai"></td> 
                     </tr>
                     <tr>
                         <td><label for="loai">Giá cũ</label></td>
-                        <td><input type="number" name="giacu" id="loai"></td>
+                        <td><input type="number" name="giacu" class="loai"></td>
                         <td><label for="loai1">Trạng thái</label></td>
-                        <td> <select name="tt" id="loai1">                  
+                        <td> <select name="tt" class="loai1">                  
                             <option value="1">Mới</option>
                             <option value="2">Đang bán</option>
                             <option value="3">Ngừng bán</option>
@@ -181,37 +181,37 @@
                 <table>
                     <tr>
                         <td><label for="danhmuc">Danh mục</label></td>
-                        <td class="fline"><select name="dm" id="danhmuc">
+                        <td class="fline"><select name="dm" class="danhmuc">
                             <option value="1">-Danh mục-</option>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="danhmuc">Danh mục nội bộ</label></td>
-                        <td><select name="dmnb" id="danhmuc">
+                        <td><select name="dmnb" class="danhmuc">
                             <option value="1">-Danh mục nội bộ-</option>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="danhmuc">Thương Hiệu</label></td>
-                        <td><select name="th" id="danhmuc">
+                        <td><select name="th" class="danhmuc">
                             <option value="1">-Thương hiệu-</option>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="loai">Khối lượng</label></td>
-                        <td><input type="number" name="khoiluong" id="loai"><label for="nbdvt"><span class="donvi">Đơn vị tính</span></label><input type="text" name="dvt" id="nbdvt" placeholder=" VD: cái,chiếc,hộp,lon,gói"></td>
+                        <td><input type="number" name="khoiluong" class="loai"><label for="nbdvt"><span class="donvi">Đơn vị tính</span></label><input type="text" name="dvt" class="nbdvt" placeholder=" VD: cái,chiếc,hộp,lon,gói"></td>
                     </tr>
                     <tr >
                         <td>Kích thước(cm)</td>
-                        <td><input type="text" name="dai" placeholder=" Dài" id="colspaninline">
-                            <input type="text" name="rong" placeholder=" Rộng" id="colspaninline">
-                            <input type="text" name="cao" placeholder=" Cao" id="colspaninline">
+                        <td><input type="text" name="dai" placeholder=" Dài" class="colspaninline">
+                            <input type="text" name="rong" placeholder=" Rộng" class="colspaninline">
+                            <input type="text" name="cao" placeholder=" Cao" class="colspaninline">
                         </td>
                     
                     </tr>
                     <tr class="no-border">
                         <td> <label for="loai">Ảnh đại diện </label></td>
-                        <td> <input type="file" name="profilepicture" id="loai"></td>
+                        <td> <input type="file" name="profilepicture" class="loai"></td>
                     </tr>
                 </table>
             </form>
@@ -229,7 +229,7 @@
                     <tr>
                         <td><label for="txtxx">Xuất xứ</label></td>
                         <td>
-                            <select name="xuatxu" id="txtxx"><option value="" data-select2-id="8"> --</option>
+                            <select name="xuatxu" class="txtxx"><option value="" data-select2-id="8"> --</option>
                                 <option value="243" data-select2-id="27">Viet Nam (Việt Nam)</option>
                                 <option value="48" data-select2-id="28">China (Trung Quốc)</option>
                                 <option value="116" data-select2-id="29">Japan (日本)</option>
@@ -487,22 +487,22 @@
                     </tr>
                     <tr>
                         <td><label for="txtt">Địa chỉ bảo hành</label></td>
-                        <td class="fline"><input type="text" name="diachi" id="txtt"></td>
+                        <td class="fline"><input type="text" name="diachi" class="txtt"></td>
                     </tr>
                     <tr>
                         <td><label for="txtt">Số điện thoại</label></td>
-                        <td class="fline"><input type="number" name="sodt" id="txtt"></td>
+                        <td class="fline"><input type="number" name="sodt" class="txtt"></td>
                     </tr>
                     <tr>
                         <td><label for="thangbaohanh">Số tháng bảo hành</label></td>
-                        <td><input type="text" name="baohanh" id="txtt"></td>
+                        <td><input type="text" name="baohanh" class="txtt"></td>
                     </tr>
                     <tr>
-                        <td id="nd-baohanh"><label for="noidung"></label>Nội dung bảo hành</td>
+                        <td class="nd-baohanh"><label for="noclassung"></label>Nội dung bảo hành</td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <textarea name="ndbh" id="noidung" cols="60" rows="10"></textarea>
+                            <textarea name="ndbh" id="noclassung" cols="78" rows="10"></textarea>
                         </td>
                     </tr>
                 </table>
@@ -522,7 +522,7 @@
                             <label for="txttd1">Số lượng</label>
                         </td>
                         <td>
-                            <input type="text" name="sl" id="txttd1">
+                            <input type="text" name="sl" class="txttd1">
                         </td>
                     </tr>
                     <tr>
@@ -530,7 +530,7 @@
                             <label for="txttd">Kiểu nhập</label>
                         </td>
                         <td>
-                            <select name="kn" id="txttd">
+                            <select name="kn" class="txttd">
                                 <option value="">--</option>
                                 <option value="1">Ký gửi</option>
                                 <option value="2">Mua đứt</option>
@@ -544,7 +544,7 @@
                             <label for="txttd">Cửa hàng</label>
                         </td>
                         <td>
-                            <select name="cuahang" id="txttd">
+                            <select name="cuahang" class="txttd">
                                 <option value="1">-Cửa hàng-</option>
                                 <option value="2">shop A</option>
                                 <option value="3">shop B</option>
@@ -557,7 +557,7 @@
                             <label for="txttd1">Nhà cung cấp</label>
                         </td>
                         <td>
-                            <input type="text" name="ncc" id="txttd1">
+                            <input type="text" name="ncc" class="txttd1">
                         </td>
                     </tr>
                 </table>
@@ -566,15 +566,15 @@
         <div>
             <div class="radio1">
                 <div>
-                    <input type="radio" name="radio1" id="rdom1" value="1" checked>
+                    <input type="radio" name="radio1" class="rdom1" value="1" checked>
                     <label for="rdom1">Tiếp tục thêm</label>
                 </div>
                 <div>
-                    <input type="radio" name="radio1" id="rdom2" value="2">
+                    <input type="radio" name="radio1" class="rdom2" value="2">
                     <label for="rdom2">Hiện danh sách sản phẩm</label>
                 </div>
                 <div>
-                    <input type="radio" name="radio1" id="rdom3" value="3">
+                    <input type="radio" name="radio1" class="rdom3" value="3">
                     <label for="rdom3">In mã vạch sản phẩm</label>
                 </div>
                 
@@ -582,7 +582,7 @@
                 
             </div>
            <div class="button">
-            <button type="button" id="luu"><i class="ti-save-alt"></i>
+            <button type="button"class="luu"><i class="ti-save-alt"></i>
                 Lưu
             </button>
            </div>
